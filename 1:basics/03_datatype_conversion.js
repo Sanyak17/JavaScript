@@ -28,7 +28,7 @@ score2 =undefined;
 
 let isLoggedIn = "santa"
 let booleanIsLoggedIn = Boolean(isLoggedIn)
- console.log(booleanIsLoggedIn);
+//  console.log(booleanIsLoggedIn);
 
 // 1 => true; 0 => false
 // "" => false
@@ -36,5 +36,39 @@ let booleanIsLoggedIn = Boolean(isLoggedIn)
 
 let num=123;
 let str=String(num);
-console.log(typeof str);
-console.log(str);
+// console.log(typeof str);
+// console.log(str);
+
+
+// *********************** Operations ***********************
+let val=34;
+let negval=-val;
+//console.log(negval);
+// console.log(2+2);
+// console.log(2-2);
+// console.log(2*2);
+// console.log(2**3);
+// console.log(2/3);
+// console.log(2%3);
+
+let str1 = "hello "
+let str2 = "sanya"
+
+let str3 = str1 + str2
+console.log(str3);
+
+console.log("1" + 2);
+console.log(1 + "2");
+console.log("1" + 2 + 2);
+console.log(1 + 2 + "2");
+
+console.log(typeof ("1" + 2));
+console.log(typeof (1 + "2"));
+console.log(typeof ("1" + 2 + 2)); //should have been  14
+console.log(typeof (1 + 2 + "2"));// why not 122
+
+
+let gameCounter = 100
+++gameCounter;
+console.log(gameCounter);
+// study pre and post inc and dec
