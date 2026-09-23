@@ -1,2 +1,3 @@
 # JavaScript
-A javascript repo for learning ans practicing
+A javascript repository  for learning and practicing...
+
