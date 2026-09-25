@@ -1,2 +1,2 @@
 # JavaScript
-A javascript repo for learning ans practicing
+A javascript repo for learning and practicing
