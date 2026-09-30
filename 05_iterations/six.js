@@ -8,6 +8,8 @@ return item;//then also undefined
 //so we get to know that foreach will never return a value
 
 //FILTER:
+//filter() creates a new array containing only the elements that satisfy a condition.
+//array.filter((element) => condition);
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 // const newNums = myNums.filter( (num) => {
