@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body style="background-color: #212121;color:#fff">
+    <script>
+    const div = document.createElement('div')//to create a new element
+    console.log(div);
+    div.className = "main"
+    div.id = Math.round(Math.random() * 10 + 1)
+    div.setAttribute("title", "generated title")
+    div.style.backgroundColor = "green"
+    div.style.padding = "12px"
+    //these all properties are present but aren't shown on the webpage because they are present in memory and we have to attach it on the page
+    // div.innerText = "Chai aur code"// this is not preffered as it goes and searches that value and then changes it so 2 times the same thing whereas the set attribute
+    // feature directly sets the attributes -saves one round trip
+    const addText = document.createTextNode("Chai aur code")
+    div.appendChild(addText)
+    //to attach this div on the document
+    document.body.appendChild(div)
+    </script>
+</body>
+
+</html>
