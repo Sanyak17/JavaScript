@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async projects</title>
+</head>
+<body>
+    <h1>Chai aur JS</h1>
+    <button class="stop">STOP</button>
+</body>
+<script>
+    //setTimeout() and setInterval() - these are some of the functions available through thr browser-not core JSpart--
+    // clearInterval and clearTimeout()
+    const id=setTimeout(function(){
+        console.log("Santa")
+    },2000)
+    //time is in ms and Timeout func-> executes the function after the specified time once
+    //here in place of executing a function we can also give a refernce of a function-- give only the refrence , dont execute it
+    // setInterval(function(){
+    //     console.log("Santa")
+    // },2000)//executes the function again and again after the specified time until stopped
+
+    //clearTimeout- a timer previously established by calling setTimeout. often used on an event 
+    document.querySelector('.stop').addEventListener('click',function(){
+        clearTimeout(id)
+        console.log("stopped")
+    })
+
+</script>
+</html>
